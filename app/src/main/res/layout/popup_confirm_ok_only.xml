@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minWidth="2000dp"
+    android:layout_margin="@dimen/dm_20dp"
+    android:padding="@dimen/dm_20dp"
+    android:background="@color/gray_bg_row_deal">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Dear Valued User"
+        android:paddingTop="@dimen/dm_5dp"
+        android:paddingBottom="@dimen/dm_5dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/txt_black_68"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/txtbody"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="We are unable to provide you with the best real time deals if we are unable to access your current location.\n\nHelp us by turning on your Location Settings by clicking YES on the next popup.\n\nWe promise that your information is kept private\n\nThank you, and have fun calling dibs!"
+        android:paddingTop="20dp"
+        android:paddingBottom="@dimen/dm_10dp"
+        android:textSize="@dimen/txt_18sp"
+        android:textColor="@color/txt_black_68" />
+
+
+    <TextView
+        android:id="@+id/txtThanksyou"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:paddingTop="@dimen/dm_5dp"
+        android:paddingBottom="10dp"
+        android:textSize="18sp"
+        android:textColor="@color/txt_black_68"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dm_50dp"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:id="@+id/lnlOk"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/btn_ok_sm"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="OK"
+                android:textSize="@dimen/txt_22sp"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black_trans_30"
+    android:gravity="bottom"
+    android:minHeight="5000dp"
+    android:minWidth="2000dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/lnlSpace"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/txtLabelSort"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/dm_10dp"
+                android:paddingLeft="@dimen/dm_20dp"
+                android:paddingRight="@dimen/dm_20dp"
+                android:paddingTop="@dimen/dm_10dp"
+                android:text="Sort"
+                android:textColor="@color/txt_black_68"
+                android:textSize="@dimen/txt_18sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right">
+
+            <TextView
+                android:id="@+id/txtDone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/dm_10dp"
+                android:paddingLeft="@dimen/dm_20dp"
+                android:paddingRight="@dimen/dm_20dp"
+                android:paddingTop="@dimen/dm_10dp"
+                android:text="Done"
+                android:textColor="@color/blue_main"
+                android:textSize="@dimen/txt_18sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_row_deal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_row_deal"
+            android:background="@color/white"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <kankan.wheel.widget.WheelView
+                android:id="@+id/whl1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <kankan.wheel.widget.WheelView
+                android:id="@+id/whl2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_above="@+id/viewCenter"
+            android:background="@color/gray_detail_divider" />
+
+        <View
+            android:id="@+id/viewCenter"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/tabs_height"
+            android:layout_centerVertical="true" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/viewCenter"
+            android:background="@color/gray_detail_divider" />
+    </RelativeLayout>
+</LinearLayout>

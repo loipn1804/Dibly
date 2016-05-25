@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--latsol-->
+    <!--<string name="facebook_app_id">402417909955244</string>-->
+
+    <!-- hello@getdibly.com-->
+    <string name="facebook_app_id">947066108676787</string>
+    <!-- live-->
+    <!--<string name="facebook_app_id">922228207864008</string> &lt;!&ndash; dev&ndash;&gt;-->
+
+    <string name="app_name">Dibly</string>
+    <!--<string name="app_name">Dibly (Dev)</string>-->
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="term_and_condition">Terms and Conditions of Use</string>
+    <string name="nointernet">No internet, please check your connection.</string>
+
+    <string name="blank_email">Please enter email.</string>
+    <string name="blank_pass">Please enter password.</string>
+    <string name="blank_new_pass">Please enter new password.</string>
+    <string name="blank_firstname">Please enter first name.</string>
+    <string name="blank_name">Please enter full name.</string>
+    <string name="blank_lastname">Please enter last name.</string>
+    <string name="blank_phonecode">Please enter phone code.</string>
+    <string name="blank_phonenumber">Please enter phone number.</string>
+    <string name="error_confirm_pass">Confirm pass is incorrect.</string>
+    <string name="invalidate_pass">Password should be 6 to 20 characters long</string>
+    <string name="blank_verificationCode">Please enter verification code.</string>
+    <string name="login_first">You have to login first.</string>
+
+    <string name="by_creating_account_string">By processing, you agree to Dibly Terms of Service and Privacy Policy.</string>
+    <string name="place_details">&lt;b&gt;%1$s&lt;/b&gt;&lt;br/&gt;&lt;i&gt;Place Id: %2$s&lt;/i&gt;&lt;br/&gt;Address: %3$s&lt;br/&gt;Phone: %4$s&lt;br/&gt;Website: %5$s</string>
+
+    <string name="show_qr_code">Show this QR to the merchant to claim your deal</string>
+    <string name="merchant_enter_code">Give this to the merchant to claim your deal</string>
+
+    <string name="claim_qr">Scan QR code</string>
+    <string name="claim_code">Enter secret code</string>
+
+    <string name="no_cmt">There is no comment for this deal now</string>
+    <string name="no_deal">There is no deal around you now</string>
+
+    <string name="no_purchased_deal">You have not called dibs on any running deals at the moment. Call dibs on one now!</string>
+    <string name="no_history_deal">You have not claimed any deals before. Call dibs on one now!</string>
+    <string name="no_purchased_deal_click">Call dibs</string>
+
+    <string name="open_map">You will be redirected to open the Google Maps application</string>
+    <string name="open">Open</string>
+
+    <string name="TandCapply"><u>T&amp;C</u> applies.</string>
+    <!--<string name="call">By default, the action bar appears at the top of your activity window, slightly reducing the amount of space available for the rest of your activity's layout. If, during the course of user interaction, you want to hide and show the action bar, you can do so by calling hide() and show() on the ActionBar. However, this causes your activity to recompute and redraw the layout based on its new size. \n\nTo avoid resizing your layout when the action bar hides and shows, you can enable overlay mode for the action bar. When in overlay mode, your activity layout uses all the space available as if the action bar is not there and the system draws the action bar in front of your layout \n\nAre you sure you want to continue?\n</string>-->
+
+
+    <!--mix panel-->
+    <string name="Enter_Application">Enter Application</string>
+    <string name="Exit_Application">Exit Application</string>
+    <string name="Duration_Application">Duration Application</string>
+
+    <string name="Enter_Introduction">Enter Introduction</string>
+    <string name="Exit_Introduction">Exit Introduction</string>
+    <string name="Duration_Introduction">Duration Introduction</string>
+
+    <string name="Enter_Verify">Enter Verify</string>
+    <string name="Exit_Verify">Exit Verify</string>
+    <string name="Duration_Verify">Duration Verify</string>
+
+    <string name="Enter_Signup">Enter Signup</string>
+    <string name="Exit_Signup">Exit Signup</string>
+    <string name="Duration_Signup">Duration Signup</string>
+
+    <string name="Enter_SignIn">Enter SignIn</string>
+    <string name="Exit_SignIn">Exit SignIn</string>
+    <string name="Duration_SignIn">Duration SignIn</string>
+
+    <string name="Enter_Deal_Around_You">Enter Deal Around You</string>
+    <string name="Exit_Deal_Around_You">Exit Deal Around You</string>
+    <string name="Duration_Deal_Around_You">Duration Deal Around You</string>
+
+    <string name="Enter_Filter">Enter Filter</string>
+    <string name="Exit_Filter">Exit Filter</string>
+    <string name="Duration_Filter">Duration Filter</string>
+
+    <string name="Enter_Deal_Detail">Enter Deal Detail</string>
+    <string name="Exit_Deal_Detail">Exit Deal Detail</string>
+    <string name="Duration_Deal_Detail">Duration Deal Detail</string>
+
+    <string name="Enter_Merchant_Detail">Enter Merchant Detail</string>
+    <string name="Exit_Merchant_Detail">Exit Merchant Detail</string>
+    <string name="Duration_Merchant_Detail">Duration Merchant Detail</string>
+
+    <string name="Enter_Following">Enter Following</string>
+    <string name="Exit_Following">Exit Following</string>
+    <string name="Duration_Following">Duration Following</string>
+
+    <string name="Enter_Search_Merchant">Enter Search Merchant</string>
+    <string name="Exit_Search_Merchant">Exit Search Merchant</string>
+    <string name="Duration_Search_Merchant">Duration Search Merchant</string>
+
+    <string name="Enter_Map_View">Enter Map View</string>
+    <string name="Exit_Map_View">Exit Map View</string>
+    <string name="Duration_Map_View">Duration Map View</string>
+
+    <string name="Call_Dibs">Call Dibs</string>
+
+    <string name="Claim">Claim</string>
+
+    <string name="Follow_Merchant">Follow Merchant</string>
+
+    <string name="Un_Follow_Merchant">Un Follow Merchant</string>
+
+    <string name="Yay_Nay">Yay-Nay</string>
+
+    <string name="Logout">Logout</string>
+</resources>

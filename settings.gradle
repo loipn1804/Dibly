@@ -1,0 +1,1 @@
+include ':app', ':MyDaoGenerator', ':library', ':sample', ':circular_progress_bar_library', ':libCrop', ':gestureimageview', ':viewpagerindicatorlib', ':wheel', ':TwoWayView', ':core'

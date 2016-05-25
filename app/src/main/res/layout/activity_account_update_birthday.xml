@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#b3000000"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dm_20dp"
+        android:background="@color/gray_bg_row_deal"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="@dimen/dm_20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Thank you! Welcome to Dibly (2/2)"
+            android:textColor="@color/orange_main"
+            android:textSize="@dimen/txt_18sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dm_20dp"
+            android:gravity="center"
+            android:text="Tell us your birthday!"
+            android:textColor="@color/txt_black_68"
+            android:textSize="@dimen/txt_18sp" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dm_20dp">
+
+            <TextView
+                android:id="@+id/edtBirthday"
+                style="@style/edtAccDetail"
+                android:hint="Birthday" />
+
+            <ImageView
+                android:layout_width="@dimen/dm_40dp"
+                android:layout_height="@dimen/dm_40dp"
+                android:layout_marginLeft="@dimen/dm_10dp"
+                android:padding="@dimen/dm_5dp"
+                android:src="@drawable/ic_acc_birthday" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dm_50dp"
+            android:layout_marginTop="@dimen/dm_20dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/lnlCancel"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/dm_5dp"
+                android:layout_weight="1"
+                android:background="@drawable/btn_cancel_sm"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cancel"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/txt_18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lnlOk"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/dm_5dp"
+                android:layout_weight="1"
+                android:background="@drawable/btn_ok_sm"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/txtOk"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ok"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/txt_18sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

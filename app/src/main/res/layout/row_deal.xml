@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/lnlRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_bg_row_deal"
+    android:orientation="vertical"
+    android:paddingTop="0dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_row_deal">
+
+        <ImageView
+            android:id="@+id/imvDeal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/gray_bg_row_deal"
+            android:scaleType="centerCrop" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/bg_title_deal"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+
+                android:paddingTop="@dimen/dm_10dp">
+
+                <TextView
+                    android:id="@+id/txtDesc_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dm_2dp"
+                    android:layout_marginLeft="@dimen/dm_10dp"
+                    android:layout_marginTop="@dimen/dm_10dp"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/txt_15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtDesc_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtDesc_1"
+                    android:layout_marginLeft="@dimen/dm_10dp"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/txt_12sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtDesc_2"
+                    android:layout_marginLeft="@dimen/dm_5dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingBottom="@dimen/dm_10dp"
+                    android:paddingTop="@dimen/dm_2dp">
+
+                    <ImageView
+                        android:layout_width="@dimen/dm_20dp"
+                        android:layout_height="@dimen/dm_20dp"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/ic_point1" />
+
+                    <TextView
+                        android:id="@+id/txtDistance"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:text=""
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/txt_12sp" />
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <com.lylc.widget.circularprogressbar.CircularProgressBar
+                android:id="@+id/circularProgress"
+                style="@style/Widget.ProgressBar.Holo.CircularProgressBarMyCustom"
+                android:layout_width="@dimen/dm_50dp"
+                android:layout_height="@dimen/dm_50dp"
+                android:layout_gravity="right|bottom"
+                android:layout_marginRight="@dimen/dm_10dp"
+                android:layout_marginBottom="@dimen/dm_10dp"
+                app:cpb_backgroundColor="#0Dffffff"
+                app:cpb_subtitle=""
+                app:cpb_subtitleColor="@color/orange_main"
+                app:cpb_title=""
+                app:cpb_titleColor="@color/orange_main" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txtStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dm_10dp"
+            android:layout_marginTop="@dimen/dm_10dp"
+            android:background="@color/orange_main"
+            android:paddingBottom="@dimen/dm_5dp"
+            android:paddingLeft="@dimen/dm_10dp"
+            android:paddingRight="@dimen/dm_10dp"
+            android:paddingTop="@dimen/dm_5dp"
+            android:text="Claimed"
+            android:textColor="@color/white"
+            android:textSize="@dimen/txt_15sp"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/lnlExclusive"
+            android:layout_width="@dimen/camera_padding"
+            android:layout_height="@dimen/camera_padding"
+            android:layout_marginLeft="@dimen/dm_10dp"
+            android:background="@drawable/bg_exclusive"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/dm_5dp">
+
+            <ImageView
+                android:layout_width="@dimen/ac_imv_size"
+                android:layout_height="@dimen/ac_imv_size"
+                android:src="@drawable/ic_exclusive" />
+
+            <TextView
+                android:id="@+id/txtExclusive"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="Exclusive"
+                android:textColor="@color/white"
+                android:textSize="@dimen/txt_12sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/dm_5dp"
+        android:paddingLeft="@dimen/dm_10dp"
+        android:paddingRight="0dp"
+        android:paddingTop="@dimen/dm_5dp">
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical|right"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/dm_2dp"
+            android:paddingTop="@dimen/dm_2dp">
+
+            <ImageView
+                android:layout_width="@dimen/dm_15dp"
+                android:layout_height="@dimen/dm_15dp"
+                android:visibility="gone"
+                android:src="@drawable/ic_timer" />
+
+            <TextView
+                android:id="@+id/txtDays"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dm_5dp"
+                android:singleLine="true"
+                android:visibility="gone"
+                android:text=""
+                android:textColor="@color/txt_black_69"
+                android:textSize="@dimen/txt_12sp" />
+
+            <com.dibs.dibly.view.CountDownTextView
+                android:id="@+id/txtCountdownTimer"
+                android:layout_width="@dimen/camera_padding"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/dm_5dp"
+                android:visibility="gone"
+                android:singleLine="true"
+                android:text="22:22:22"
+                android:textColor="@color/txt_black_69"
+                android:textSize="@dimen/txt_12sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lnlMoreDeal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/tabs_height"
+        android:background="@drawable/btn_more_deal_from_outlet"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/txtMoreDeal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:paddingLeft="@dimen/dm_10dp"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="@dimen/txt_15sp" />
+
+        <ImageView
+            android:layout_width="@dimen/ac_imv_size"
+            android:layout_height="@dimen/ac_imv_size"
+            android:padding="@dimen/tabs_trip"
+            android:src="@drawable/ic_arrow_right_white" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dm_10dp"
+        android:visibility="gone"
+        android:background="@drawable/shadow_row_deal_2" />
+
+
+    <View
+        android:id="@+id/foot"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dm_4dp"
+        android:background="@color/transparent" />
+
+</LinearLayout>

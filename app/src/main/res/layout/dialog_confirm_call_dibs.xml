@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/dm_20dp"
+    android:background="@drawable/bg_dialog_call_dib"
+    android:minWidth="2000dp"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dm_20dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:text="Terms And Conditions"
+                    android:textColor="#222222"
+                    android:textSize="@dimen/txt_22sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dm_20dp">
+
+                <TextView
+                    android:id="@+id/txtTermAndCon"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:text=""
+                    android:textColor="@color/txt_black_68"
+                    android:textSize="@dimen/txt_12sp" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btnOk"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="@dimen/dm_20dp"
+            android:layout_marginRight="@dimen/dm_20dp"
+            android:layout_marginTop="@dimen/dm_20dp"
+            android:background="@drawable/bg_btn_make_payment"
+            android:gravity="center"
+            android:text="Yes, I want this"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/txt_18sp" />
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="@dimen/dm_20dp"
+            android:layout_marginLeft="@dimen/dm_20dp"
+            android:layout_marginRight="@dimen/dm_20dp"
+            android:layout_marginTop="@dimen/dm_20dp"
+            android:background="@drawable/bg_btn_cancel"
+            android:gravity="center"
+            android:text="Cancel"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/txt_18sp" />
+    </LinearLayout>
+</LinearLayout>

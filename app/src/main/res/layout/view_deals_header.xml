@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/lnlFilter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dm_10dp"
+        android:layout_marginLeft="@dimen/dm_20dp"
+        android:layout_marginRight="@dimen/dm_20dp"
+        android:layout_marginBottom="@dimen/dm_10dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dm_50dp"
+            android:background="@color/white">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dm_50dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:gravity="center"
+                android:id="@+id/lnlCategory"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/dm_10dp"
+                android:paddingRight="@dimen/dm_10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="CATEGORY"
+                    android:textColor="@color/txt_black_69"
+                    android:textSize="@dimen/txt_13sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dm_5dp"
+                    android:ellipsize="end"
+                    android:id="@+id/txtCategory"
+                    android:gravity="center_horizontal"
+                    android:singleLine="true"
+                    android:text="-"
+                    android:textColor="@color/orange_main"
+                    android:textSize="@dimen/txt_13sp" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="@dimen/dm_1dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/dm_10dp"
+                android:visibility="gone"
+                android:layout_marginTop="@dimen/dm_10dp"
+                android:background="@color/gray_detail_divider" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dm_50dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:gravity="center"
+                android:visibility="gone"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/dm_10dp"
+                android:paddingRight="@dimen/dm_10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="TYPE"
+                    android:textColor="@color/txt_black_69"
+                    android:textSize="@dimen/txt_15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dm_5dp"
+                    android:ellipsize="end"
+                    android:gravity="center_horizontal"
+                    android:singleLine="true"
+                    android:text="-"
+                    android:id="@+id/txtTypeDeal"
+                    android:textColor="@color/orange_main"
+                    android:textSize="@dimen/txt_15sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnMoreFilter"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dm_40dp"
+            android:layout_marginBottom="@dimen/dm_10dp"
+            android:layout_marginTop="@dimen/dm_10dp"
+            android:background="@drawable/btn_filter_deal"
+            android:text="More Filters"
+            android:visibility="gone"
+            android:textColor="@color/orange_main"
+            android:textSize="@dimen/txt_15sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

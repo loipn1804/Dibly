@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_guide"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </android.support.v4.view.ViewPager>
+
+        <com.viewpagerindicator.CirclePageIndicator
+            android:id="@+id/indicator"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            app:fillColor="@color/orange_main"
+            app:pageColor="#80000000" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rltGerStarted"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dm_50dp"
+        android:background="@color/blue_main">
+
+        <TextView
+            android:id="@+id/txtGetStart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Get Started!"
+            android:textColor="@color/white"
+            android:textSize="@dimen/txt_22sp" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_bg_row_deal">
+
+
+    <RelativeLayout
+        android:id="@+id/roots"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/row_merchant_height">
+
+        <ImageView
+            android:id="@+id/imvCover"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/black_trans_50" />
+
+        <RelativeLayout
+            android:id="@+id/rltLogo"
+            android:layout_width="@dimen/row_merchant_logo_height"
+            android:layout_height="@dimen/row_merchant_logo_height"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/dm_10dp"
+            android:layout_marginLeft="@dimen/dm_10dp"
+            android:background="@drawable/bg_circle_white"
+            android:padding="@dimen/dm_2dp">
+
+            <ImageView
+                android:id="@+id/imvLogo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/rltLogo"
+            android:layout_alignTop="@+id/rltLogo"
+            android:layout_marginLeft="@dimen/dm_10dp"
+            android:layout_toRightOf="@+id/rltLogo"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtMerchantName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="@dimen/txt_18sp" />
+
+            <TextView
+                android:id="@+id/txtNumberOfNewVoucher"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="@dimen/txt_12sp"
+                android:visibility="gone" />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+    <ImageView
+        android:id="@+id/imvFollow"
+        android:layout_width="@dimen/ac_imv_size"
+        android:layout_height="@dimen/ac_imv_size"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/dm_10dp"
+        android:layout_marginTop="@dimen/dm_10dp"
+        android:src="@drawable/ic_heart_inactive" />
+</RelativeLayout>

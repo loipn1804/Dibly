@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2f2f2"
+    android:id="@+id/root"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="?attr/colorPrimary"
+        android:gravity="center_vertical"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/ToolbarColoredBackArrow"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:layout_gravity="center_vertical"
+                android:text="Filter"
+                android:layout_marginRight="50dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/txt_title" />
+
+            <TextView
+                android:id="@+id/btnReset"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:text="Reset"
+                android:gravity="center_vertical"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/txt_18sp" />
+        </FrameLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtLabelGender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dm_20dp"
+                android:layout_marginRight="@dimen/dm_20dp"
+                android:visibility="gone"
+                android:layout_marginTop="@dimen/dm_20dp"
+                android:gravity="center_horizontal"
+                android:text="KEYWORD"
+                android:textColor="@color/txt_black_68"
+                android:textSize="@dimen/txt_15sp"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dm_20dp"
+                android:layout_marginRight="@dimen/dm_20dp"
+                android:visibility="gone"
+                android:layout_marginTop="@dimen/dm_5dp">
+
+                <EditText
+                    android:id="@+id/edtKeyword"
+                    style="@style/edtAccDetail"
+                    android:hint="Keyword..."
+                    android:imeOptions="actionDone"
+                    android:paddingLeft="10dp" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/txtLabelCategory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dm_20dp"
+                android:layout_marginRight="@dimen/dm_20dp"
+                android:layout_marginTop="@dimen/dm_20dp"
+                android:gravity="center_horizontal"
+                android:text="CATEGORY"
+                android:textColor="@color/txt_black_68"
+                android:textSize="@dimen/txt_15sp"
+                android:textStyle="bold" />
+
+            <com.dibs.dibly.view.NestedListView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dm_20dp"
+                android:dividerHeight="0dp"
+                android:divider="@color/transparent"
+                android:layout_marginTop="@dimen/dm_10dp"
+                android:layout_marginRight="@dimen/dm_20dp"
+                android:id="@+id/lstViewCategory"/>
+
+            <TextView
+                android:id="@+id/txtLabelTypeOfDeal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dm_20dp"
+                android:layout_marginRight="@dimen/dm_20dp"
+                android:layout_marginTop="@dimen/dm_20dp"
+                android:gravity="center_horizontal"
+                android:visibility="gone"
+                android:text="TYPE OF DEAL"
+                android:textColor="@color/txt_black_68"
+                android:textSize="@dimen/txt_15sp"
+                android:textStyle="bold" />
+
+            <com.dibs.dibly.view.NestedListView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dm_20dp"
+                android:layout_marginTop="@dimen/dm_10dp"
+                android:dividerHeight="0dp"
+                android:visibility="gone"
+                android:divider="@color/transparent"
+                android:layout_marginRight="@dimen/dm_20dp"
+                android:id="@+id/lstViewTypeOfDeal"/>
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dm_40dp"
+        android:id="@+id/btnFilter"
+        android:layout_marginLeft="@dimen/dm_20dp"
+        android:layout_marginRight="@dimen/dm_20dp"
+        android:layout_marginTop="@dimen/dm_30dp"
+        android:layout_marginBottom="@dimen/dm_20dp"
+        android:textColor="@color/white"
+        android:text="Save Filters"
+        android:background="@color/orange_main"/>
+
+</LinearLayout>

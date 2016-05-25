@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_bg_row_deal"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dm_20dp"
+                android:layout_marginRight="@dimen/dm_20dp"
+                android:layout_marginTop="@dimen/dm_20dp">
+
+                <EditText
+                    android:id="@+id/edtName"
+                    style="@style/edtAccDetail"
+                    android:hint="Name" />
+
+                <ImageView
+                    android:layout_width="@dimen/dm_40dp"
+                    android:layout_height="@dimen/dm_40dp"
+                    android:layout_marginLeft="@dimen/dm_10dp"
+                    android:padding="@dimen/dm_5dp"
+                    android:src="@drawable/ic_acc_firstname" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dm_20dp"
+                android:layout_marginRight="@dimen/dm_20dp"
+                android:layout_marginTop="@dimen/dm_10dp">
+
+                <EditText
+                    android:id="@+id/edtEmail"
+                    style="@style/edtAccDetail"
+                    android:hint="Email" />
+
+                <ImageView
+                    android:layout_width="@dimen/dm_40dp"
+                    android:layout_height="@dimen/dm_40dp"
+                    android:layout_marginLeft="@dimen/dm_10dp"
+                    android:padding="@dimen/dm_5dp"
+                    android:src="@drawable/ic_acc_mail" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dm_20dp"
+                android:layout_marginRight="@dimen/dm_20dp"
+                android:layout_marginTop="@dimen/dm_10dp">
+
+                <EditText
+                    android:id="@+id/edtPass"
+                    style="@style/edtAccDetail"
+                    android:hint="Password"
+                    android:inputType="textPassword" />
+
+                <ImageView
+                    android:layout_width="@dimen/dm_40dp"
+                    android:layout_height="@dimen/dm_40dp"
+                    android:layout_marginLeft="@dimen/dm_10dp"
+                    android:padding="@dimen/dm_5dp"
+                    android:src="@drawable/ic_acc_pass_change" />
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="@dimen/dm_80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dm_20dp"
+                    android:layout_marginRight="@dimen/dm_10dp"
+                    android:layout_marginTop="@dimen/dm_10dp">
+
+                    <TextView
+                        android:id="@+id/edtPhoneCode"
+                        android:hint="+65"
+                        android:text="+65"
+                        android:layout_width="@dimen/dm_80dp"
+                        android:layout_height="@dimen/dm_40dp"
+                        android:textColor="@color/txt_black_68"
+                        android:paddingLeft="@dimen/dm_10dp"
+                        android:paddingRight="@dimen/dm_25dp"
+                        android:gravity="center"
+                        android:editable="false"
+                        android:textColorHint="@color/txt_hint"
+                        android:textSize="@dimen/txt_18sp"
+                        android:background="@drawable/bg_edittext_account"
+                        android:inputType="phone" />
+
+                    <ImageView
+                        android:layout_width="@dimen/dm_25dp"
+                        android:layout_height="@dimen/dm_25dp"
+                        android:layout_marginLeft="@dimen/dm_10dp"
+                        android:padding="@dimen/dm_5dp"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:src="@drawable/ic_expand" />
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/dm_20dp"
+                    android:layout_marginTop="@dimen/dm_10dp">
+
+                    <EditText
+                        android:id="@+id/edtPhoneNumber"
+                        style="@style/edtAccDetail"
+                        android:hint="Phone Number"
+                        android:inputType="phone" />
+
+                    <ImageView
+                        android:layout_width="@dimen/dm_40dp"
+                        android:layout_height="@dimen/dm_40dp"
+                        android:layout_marginLeft="@dimen/dm_10dp"
+                        android:padding="@dimen/dm_5dp"
+                        android:src="@drawable/ic_phone" />
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dm_10dp"
+                android:gravity="center"
+                android:padding="@dimen/dm_10dp"
+                android:text="Your phone number will be used to help us verify your account"
+                android:textColor="@color/txt_black_99"
+                android:textSize="@dimen/txt_12sp" />
+
+            <TextView
+                android:id="@+id/txtTerm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dm_10dp"
+                android:gravity="center"
+                android:padding="@dimen/dm_10dp"
+                android:text="By signing up, you agree to our Terms and Privacy Policy"
+                android:textColor="@color/txt_black_68"
+                android:textSize="@dimen/txt_12sp" />
+
+            <TextView
+                android:id="@+id/txtSignup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dm_10dp"
+                android:layout_marginLeft="@dimen/dm_80dp"
+                android:layout_marginRight="@dimen/dm_80dp"
+                android:layout_marginTop="@dimen/dm_10dp"
+                android:background="@drawable/bg_btn_login"
+                android:gravity="center"
+                android:visibility="gone"
+                android:paddingBottom="@dimen/dm_10dp"
+                android:paddingTop="@dimen/dm_10dp"
+                android:text="Sign up"
+                android:textColor="@color/white"
+                android:textSize="@dimen/txt_18sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:paddingLeft="@dimen/dm_20dp"
+                android:paddingRight="@dimen/dm_20dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/bg_signin" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

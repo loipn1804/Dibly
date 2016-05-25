@@ -1,0 +1,13 @@
+<resources>
+
+    <dimen name="stroke">2dp</dimen>
+    <dimen name="txt_8sp">12sp</dimen>
+    <dimen name="txt_12sp">16sp</dimen>
+    <dimen name="txt_13sp">17sp</dimen>
+    <dimen name="txt_15sp">19sp</dimen>
+    <dimen name="txt_18sp">22sp</dimen>
+    <dimen name="txt_22sp">26sp</dimen>
+    <dimen name="txt_26sp">30sp</dimen>
+    <dimen name="txt_32sp">36sp</dimen>
+    <dimen name="txt_title">24sp</dimen>
+</resources>

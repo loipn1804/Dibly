@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dm_10dp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/imvLike"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dm_10dp"
+                android:layout_marginRight="@dimen/dm_5dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_like_al" />
+
+            <LinearLayout
+                android:id="@+id/lnlLike"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/imvLike"
+                android:layout_alignTop="@+id/imvLike"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dm_10dp"
+                android:layout_marginRight="@dimen/dm_5dp"
+                android:gravity="right|center_vertical"
+                android:orientation="horizontal"
+                android:weightSum="5">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtLike"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/txt_18sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="YAY! "
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/txt_26sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txtYourLike"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/lnlLike"
+                android:layout_centerHorizontal="true"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="@dimen/txt_12sp" />
+
+            <ProgressBar
+                android:id="@+id/progLike"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/imvUnLike"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dm_5dp"
+                android:layout_marginRight="@dimen/dm_10dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_unlike_al" />
+
+            <LinearLayout
+                android:id="@+id/lnlUnLike"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/imvUnLike"
+                android:layout_alignTop="@+id/imvUnLike"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dm_5dp"
+                android:layout_marginRight="@dimen/dm_10dp"
+                android:gravity="left|center_vertical"
+                android:orientation="horizontal"
+                android:weightSum="5">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtUnLike"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/txt_18sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="NAY!"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/txt_26sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txtYourUnLike"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/lnlUnLike"
+                android:layout_centerHorizontal="true"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="@dimen/txt_12sp" />
+
+            <ProgressBar
+                android:id="@+id/progUnLike"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtNoCmt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dm_5dp"
+        android:gravity="center_horizontal"
+        android:text="@string/no_cmt"
+        android:textColor="@color/txt_black_68"
+        android:textSize="@dimen/txt_15sp" />
+</LinearLayout>

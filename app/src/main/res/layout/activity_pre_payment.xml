@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff">
+
+    <RelativeLayout
+        android:id="@+id/rltActionBar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/actionbar_height"
+        android:background="@color/white">
+
+        <RelativeLayout
+            android:id="@+id/rltBack"
+            android:layout_width="@dimen/actionbar_height"
+            android:layout_height="match_parent"
+            android:background="#ffffff"
+            android:gravity="center_horizontal">
+
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/txtNameActionBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Deals Detail"
+            android:textColor="#FDB243"
+            android:textSize="@dimen/txt_title" />
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dm_30dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="This following deal can be claimed in-app, and collected on a later date:"
+            android:textColor="#222222"
+            android:gravity="center"
+            android:textSize="17sp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dm_25dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="$25 for $50 Worth of Any Food &amp; Drink at Going Om (Haji Lane)"
+            android:textColor="#666666"
+            android:gravity="center"
+            android:textSize="17sp"
+            android:paddingLeft="35dp"
+            android:paddingRight="35dp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/dm_40dp">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_marginLeft="@dimen/dm_20dp"
+            android:layout_marginRight="@dimen/dm_20dp"
+            android:layout_marginTop="@dimen/dm_30dp"
+            android:background="@drawable/bg_btn_make_payment"
+            android:gravity="center"
+            android:text="Make Payment Now"
+            android:textColor="#ffffff"
+            android:textSize="28sp" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

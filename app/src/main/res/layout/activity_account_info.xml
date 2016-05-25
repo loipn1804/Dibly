@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2f2f2"
+    android:orientation="vertical">
+
+
+    <android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="?attr/colorPrimary"
+        android:gravity="center_vertical"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/ToolbarColoredBackArrow"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txtTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="50dp"
+                android:gravity="center"
+                android:text="My Profile"
+                android:textColor="@color/white"
+                android:textSize="@dimen/txt_title" />
+
+            <LinearLayout
+                android:layout_width="@dimen/dm_60dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="right|center_vertical"
+                android:gravity="right|center_vertical"
+                android:id="@+id/btnAccountSetting"
+                android:layout_marginRight="10dp">
+
+                <ImageView
+
+                    android:layout_width="@dimen/dm_20dp"
+                    android:layout_height="@dimen/dm_20dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/ic_setting" />
+            </LinearLayout>
+        </FrameLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/orange_main"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dm_10dp"
+                    android:gravity="center">
+
+                    <RelativeLayout
+                        android:id="@+id/rltAvatar"
+                        android:layout_width="@dimen/height_avatar"
+                        android:layout_height="@dimen/height_avatar"
+                        android:background="@drawable/bg_avatar_white"
+                        android:padding="3dp">
+
+                        <ImageView
+                            android:id="@+id/imgAvatar"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/menu_person" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/txtFullName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dm_10dp"
+                    android:gravity="center_horizontal"
+                    android:text="FULL NAME"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/txt_18sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dm_10dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/lnlFollowing"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/dm_10dp"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/txtFollowingNo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:text="0"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/txt_15sp"
+                            android:textStyle="bold" />
+
+
+                        <TextView
+                            android:id="@+id/txtLableFollowing"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:text=" following"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/txt_15sp" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="@dimen/dm_1dp"
+                        android:layout_height="@dimen/dm_10dp"
+                        android:layout_gravity="center_vertical"
+                        android:background="@color/white" />
+
+                    <LinearLayout
+                        android:id="@+id/lnlCallDib"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dm_10dp"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:id="@+id/txtDibsCalled"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:text="0"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/txt_15sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/txtLableCalDib"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:text=" dibs called"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/txt_15sp" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/txtCreditNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dm_10dp"
+                    android:gravity="center_horizontal"
+                    android:text="$20 credit"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/txt_15sp"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/btnEditProfile"
+                    android:layout_width="200dp"
+                    android:layout_height="@dimen/dm_40dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/dm_20dp"
+                    android:background="@drawable/btn_edit_profile"
+                    android:gravity="center"
+                    android:text="Edit Profile"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/txt_15sp" />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dm_40dp"
+                android:background="#f2f2f2"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/dm_10dp"
+                android:text="Basic Information"
+                android:textColor="@color/txt_black_69"
+                android:textSize="@dimen/txt_15sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dm_50dp"
+                android:layout_marginTop="@dimen/dm_5dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/dm_10dp"
+                android:paddingRight="@dimen/dm_10dp">
+
+                <TextView
+                    android:id="@+id/txtEmailLable"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="EMAIL"
+                    android:textColor="@color/txt_black_69"
+                    android:textSize="@dimen/txt_12sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtEmail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text=""
+                    android:textColor="@color/txt_black_69"
+                    android:textSize="@dimen/txt_15sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dm_50dp"
+                android:layout_marginTop="@dimen/dm_5dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/dm_10dp"
+                android:paddingRight="@dimen/dm_10dp">
+
+                <TextView
+                    android:id="@+id/txtGenderLable"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="GENDER"
+                    android:textColor="@color/txt_black_69"
+                    android:textSize="@dimen/txt_12sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtGender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text=""
+                    android:textColor="@color/txt_black_69"
+                    android:textSize="@dimen/txt_15sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dm_50dp"
+                android:layout_marginTop="@dimen/dm_5dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/dm_10dp"
+                android:paddingRight="@dimen/dm_10dp"
+                android:weightSum="10">
+
+                <TextView
+                    android:id="@+id/txtBirthdayLable"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:text="BIRTHDAY"
+                    android:textColor="@color/txt_black_69"
+                    android:textSize="@dimen/txt_12sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtBirthday"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="7"
+                    android:gravity="right"
+                    android:text=""
+                    android:textColor="@color/txt_black_69"
+                    android:textSize="@dimen/txt_15sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dm_50dp"
+                android:layout_marginTop="@dimen/dm_5dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/dm_10dp"
+                android:paddingRight="@dimen/dm_10dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/txtReferCodeLable"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="YOUR REFERRAL CODE"
+                    android:textColor="@color/txt_black_69"
+                    android:textSize="@dimen/txt_12sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtReferCode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text=""
+                    android:textColor="@color/txt_black_69"
+                    android:textSize="@dimen/txt_18sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

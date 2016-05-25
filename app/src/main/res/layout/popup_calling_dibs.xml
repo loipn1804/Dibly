@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/dm_20dp"
+    android:minWidth="2000dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_cornerpopup"
+        android:minWidth="2000dp"
+        android:orientation="vertical"
+        android:padding="@dimen/dm_20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/dm_20dp"
+                android:text="You are calling dibs!\nPlease go to the store within"
+                android:gravity="center"
+                android:textColor="@color/txt_black_68"
+                android:textSize="@dimen/txt_18sp" />
+
+            <TextView
+                android:id="@+id/txtMessage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/dm_5dp"
+                android:text=" to claim it"
+                android:gravity="center"
+                android:textColor="@color/txt_black_68"
+                android:textSize="@dimen/txt_18sp" />
+
+            <TextView
+                android:id="@+id/txtTCApply"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dm_10dp"
+                android:paddingBottom="@dimen/dm_20dp"
+                android:paddingTop="@dimen/dm_20dp"
+                android:text="@string/TandCapply"
+                android:gravity="center"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/txt_18sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dm_50dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/lnlOk"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/dm_5dp"
+                android:layout_weight="1"
+                android:background="@drawable/btn_ok_organge"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/txtOk"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ok"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/txt_22sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</FrameLayout>

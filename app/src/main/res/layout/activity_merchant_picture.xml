@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#b3000000"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_merchant_picture"
+        android:background="@color/transparent"
+        android:padding="@dimen/ac_imv_size">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imvPicture"
+            android:layout_alignLeft="@+id/imvPicture"
+            android:layout_alignRight="@+id/imvPicture"
+            android:layout_alignTop="@+id/imvPicture"
+            android:layout_centerInParent="true"
+            android:background="@color/transparent">
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="@dimen/actionbar_height"
+                android:layout_height="@dimen/actionbar_height"
+                android:layout_centerInParent="true" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/imvPicture"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true" />
+    </RelativeLayout>
+
+    <org.lucasr.twowayview.widget.TwoWayView
+        android:id="@+id/twoWayView"
+        style="@style/TwoWayView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_merchant_picture_list"
+        android:layout_marginTop="@dimen/dm_10dp"
+        android:background="@color/transparent"
+        android:scrollbars="none"
+        app:twowayview_layoutManager="ListLayoutManager" />
+
+    <TextView
+        android:id="@+id/txtImageCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/dm_10dp"
+        android:layout_marginTop="@dimen/dm_10dp"
+        android:text="Image 1 of 5"
+        android:textColor="@color/white"
+        android:textSize="@dimen/txt_18sp" />
+</LinearLayout>

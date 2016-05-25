@@ -1,0 +1,88 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 21
+    buildToolsVersion "21.1.2"
+
+    defaultConfig {
+        applicationId "com.dibs.dibly"
+        minSdkVersion 15
+        targetSdkVersion 21
+        versionCode 10
+        versionName "1.34"
+        multiDexEnabled true
+    }
+
+    sourceSets {
+        main {
+            manifest.srcFile 'src/main/AndroidManifest.xml'
+            java.srcDirs = ['src/main/java', 'src/main/java-gen']
+            res.srcDirs = ['src/main/res']
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE.txt'
+    }
+
+    dexOptions {
+        incremental true
+        javaMaxHeapSize "4g"
+    }
+}
+
+allprojects {
+    repositories {
+        jcenter()
+        mavenCentral()
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile 'com.android.support:appcompat-v7:22.1.1'
+    compile 'de.greenrobot:greendao:1.3.7'
+    compile 'com.google.android.gms:play-services:7.3.0'
+    compile 'com.joanzapata.android:android-iconify:1.0.9'
+    //    compile files('libs/zxing-2.0-core.jar')
+    compile 'com.astuetz:pagerslidingtabstrip:1.0.1'
+   // compile 'com.jpardogo.materialtabstrip:library:1.1.0'
+    compile 'com.dlazaro66.qrcodereaderview:qrcodereaderview:1.0.0'
+    compile project(':circular_progress_bar_library')
+    compile project(':libCrop')
+    compile files('libs/commons-codec-1.6.jar')
+    compile files('libs/commons-logging-1.1.3.jar')
+    compile files('libs/fluent-hc-4.3.3.jar')
+    compile files('libs/httpclient-4.3.3.jar')
+    compile files('libs/httpclient-cache-4.3.3.jar')
+    compile files('libs/httpcore-4.3.2.jar')
+    compile files('libs/httpmime-4.3.3.jar')
+    compile project(':gestureimageview')
+    compile 'com.pnikosis:materialish-progress:1.5'
+    compile 'com.braintreepayments.api:braintree:1.+'
+    compile 'com.melnykov:floatingactionbutton:1.3.0'
+    compile 'com.android.support:multidex:1.0.0'
+    compile 'com.android.support:design:22.2.1'
+    compile 'com.github.clans:fab:1.5.4'
+    compile project(':viewpagerindicatorlib')
+    compile project(':wheel')
+    debugCompile 'com.squareup.leakcanary:leakcanary-android:1.3.1'
+    releaseCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.3.1'
+    compile project(':TwoWayView')
+    compile files('libs/universal-image-loader-1.9.4.jar')
+    compile 'com.android.support:support-v4:22.2.1'
+    compile 'com.sromku:simple-fb:4.1.1'
+    compile files('libs/splunk-mint-4.0.8.jar')
+    compile "com.mixpanel.android:mixpanel-android:4.+"
+}

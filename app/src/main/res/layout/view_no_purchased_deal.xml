@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="@dimen/camera_padding"
+        android:layout_height="@dimen/camera_padding"
+        android:src="@drawable/ic_no_purchased_deal" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dm_10dp"
+        android:gravity="center"
+        android:paddingLeft="@dimen/dm_10dp"
+        android:paddingRight="@dimen/dm_10dp"
+        android:text="@string/no_purchased_deal"
+        android:textColor="@color/txt_black_68"
+        android:textSize="@dimen/txt_15sp" />
+</LinearLayout>

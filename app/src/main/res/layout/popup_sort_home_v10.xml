@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black_trans_30"
+    android:gravity="bottom"
+    android:minHeight="5000dp"
+    android:minWidth="2000dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/lnlSpace"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/txtLabelSort"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/dm_20dp"
+                    android:paddingLeft="@dimen/dm_20dp"
+                    android:paddingRight="@dimen/dm_20dp"
+                    android:paddingTop="@dimen/dm_10dp"
+                    android:text="Sort"
+                    android:textColor="@color/txt_black_68"
+                    android:textSize="@dimen/txt_18sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right">
+
+                <TextView
+                    android:id="@+id/txtDone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/dm_20dp"
+                    android:paddingLeft="@dimen/dm_20dp"
+                    android:paddingRight="@dimen/dm_20dp"
+                    android:paddingTop="@dimen/dm_10dp"
+                    android:text="Done"
+                    android:textColor="@color/blue_main"
+                    android:textSize="@dimen/txt_18sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dm_1dp"
+            android:background="@color/gray_detail_divider" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txtDistance"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/gray_bg_call_dibs"
+                android:gravity="center"
+                android:paddingBottom="@dimen/dm_10dp"
+                android:paddingTop="@dimen/dm_10dp"
+                android:text="Distance"
+                android:textColor="@color/orange_main"
+                android:textSize="@dimen/txt_18sp" />
+
+            <TextView
+                android:id="@+id/txtStartingTime"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:gravity="center"
+                android:paddingBottom="@dimen/dm_10dp"
+                android:paddingTop="@dimen/dm_10dp"
+                android:text="Starting Time"
+                android:textColor="@color/black"
+                android:textSize="@dimen/txt_18sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dm_1dp"
+            android:background="@color/gray_detail_divider" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txtAsc"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:gravity="center"
+                android:paddingBottom="@dimen/dm_10dp"
+                android:paddingTop="@dimen/dm_10dp"
+                android:text="Ascending"
+                android:textColor="@color/black"
+                android:textSize="@dimen/txt_18sp" />
+
+            <TextView
+                android:id="@+id/txtDesc"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/gray_bg_call_dibs"
+                android:gravity="center"
+                android:paddingBottom="@dimen/dm_10dp"
+                android:paddingTop="@dimen/dm_10dp"
+                android:text="Descending"
+                android:textColor="@color/orange_main"
+                android:textSize="@dimen/txt_18sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dm_1dp"
+            android:background="@color/gray_detail_divider" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/ac_imv_size" />
+    </LinearLayout>
+</LinearLayout>

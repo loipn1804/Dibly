@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:wheel="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent"
+    android:gravity="center">
+
+    <FrameLayout
+        android:layout_width="75dp"
+        android:layout_height="75dp">
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_progress" />
+
+        <com.pnikosis.materialishprogress.ProgressWheel
+            android:id="@+id/progress_wheel"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            wheel:matProg_barColor="#FDB243"
+            wheel:matProg_barSpinCycleTime="1000"
+            wheel:matProg_barWidth="2dp"
+            wheel:matProg_fillRadius="true"
+            wheel:matProg_linearProgress="true"
+            wheel:matProg_progressIndeterminate="true"
+            wheel:matProg_spinSpeed="0.25" />
+
+
+    </FrameLayout>
+
+
+</LinearLayout>

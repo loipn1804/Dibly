@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_bg_row_deal"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rltActionBar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/actionbar_height"
+        android:background="@color/white">
+
+        <RelativeLayout
+            android:id="@+id/rltBack"
+            android:layout_width="@dimen/actionbar_height"
+            android:layout_height="match_parent"
+            android:background="@drawable/btn_white"
+            android:gravity="center_horizontal">
+
+            <ImageView
+                android:id="@+id/imvBack"
+                android:layout_width="@dimen/ac_imv_size"
+                android:layout_height="@dimen/ac_imv_size"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_back" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rltShare"
+            android:layout_width="@dimen/actionbar_height"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/btn_white">
+
+            <ImageView
+                android:layout_width="@dimen/ac_imv_size"
+                android:layout_height="@dimen/ac_imv_size"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_share" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/txtNameActionBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Deal Details"
+            android:textColor="@color/orange_main"
+            android:textSize="@dimen/txt_title" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_row_deal">
+
+        <ImageView
+            android:id="@+id/imvDeal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/gray_bg_row_deal"
+            android:scaleType="centerCrop" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/bg_title_deal"
+            android:paddingTop="@dimen/dm_10dp">
+
+            <TextView
+                android:id="@+id/txtDesc_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dm_2dp"
+                android:layout_marginLeft="@dimen/dm_10dp"
+                android:layout_marginTop="@dimen/dm_10dp"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="@dimen/txt_15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtDesc_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtDesc_1"
+                android:layout_marginLeft="@dimen/dm_10dp"
+                android:paddingBottom="@dimen/dm_10dp"
+                android:text=""
+                android:textColor="@color/orange_main"
+                android:textSize="@dimen/txt_12sp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/lnlExclusive"
+            android:layout_width="@dimen/camera_padding"
+            android:layout_height="@dimen/camera_padding"
+            android:layout_marginLeft="@dimen/dm_10dp"
+            android:background="@drawable/bg_exclusive"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/dm_5dp">
+
+            <ImageView
+                android:layout_width="@dimen/ac_imv_size"
+                android:layout_height="@dimen/ac_imv_size"
+                android:src="@drawable/ic_exclusive" />
+
+            <TextView
+                android:id="@+id/txtExclusive"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="Exclusive"
+                android:textColor="@color/white"
+                android:textSize="@dimen/txt_12sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/gray_bg_tab_trip">
+
+        <com.astuetz.PagerSlidingTabStrip
+            android:id="@+id/tabs"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/tabs_height"
+            android:layout_centerInParent="true"
+            app:pstsIndicatorHeight="@dimen/tabs_trip" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </android.support.v4.view.ViewPager>
+
+        <RelativeLayout
+            android:id="@+id/rltCover"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/gray_bg_row_deal">
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dm_70dp"
+        android:background="@color/gray_bg_call_dibs">
+
+        <RelativeLayout
+            android:id="@+id/rltCallDib"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/dm_10dp"
+            android:layout_marginLeft="@dimen/dm_20dp"
+            android:layout_marginRight="@dimen/dm_20dp"
+            android:layout_marginTop="@dimen/dm_10dp"
+            android:background="@drawable/btn_organge">
+
+            <TextView
+                android:id="@+id/txtCallDib"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="I Call Dibs"
+                android:textColor="@color/white"
+                android:textSize="@dimen/txt_22sp" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

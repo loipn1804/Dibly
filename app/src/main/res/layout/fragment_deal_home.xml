@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_bg_row_deal"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/btnShowFilter"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dm_50dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="Show Filters"
+            android:textColor="@color/orange_main"
+            android:textSize="@dimen/txt_18sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/btnExpand"
+            android:layout_width="@dimen/dm_20dp"
+            android:layout_height="@dimen/dm_20dp"
+            android:layout_centerInParent="true"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/ic_expand_organ" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/swipeRefreshLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible">
+
+            <ListView
+                android:id="@+id/lvDeal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@null" />
+
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+        <LinearLayout
+            android:id="@+id/lnlCover"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="@dimen/dm_30dp"
+                android:layout_height="@dimen/dm_30dp"
+                android:src="@drawable/ic_house" />
+
+            <TextView
+                android:id="@+id/txtCover"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dm_10dp"
+                android:gravity="center"
+                android:paddingLeft="@dimen/dm_10dp"
+                android:paddingRight="@dimen/dm_10dp"
+                android:text="There are no running deals for this categories at the moment, please check back soon!"
+                android:textColor="@color/txt_black_68"
+                android:textSize="@dimen/txt_18sp" />
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>
