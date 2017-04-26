@@ -49,6 +49,14 @@ allprojects {
     }
 }
 
+repositories {
+    maven { url "https://oss.sonatype.org/content/repositories/snapshots/" }
+    maven { url "https://urbanairship.bintray.com/android" }
+    flatDir {
+        dirs 'libs'
+    }
+}
+
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     compile 'com.android.support:appcompat-v7:22.1.1'
@@ -85,4 +93,27 @@ dependencies {
     compile 'com.sromku:simple-fb:4.1.1'
     compile files('libs/splunk-mint-4.0.8.jar')
     compile "com.mixpanel.android:mixpanel-android:4.+"
+
+    compile('com.wdullaer:materialdatetimepicker:2.3.0') {
+        transitive = false
+    }
+    compile('com.squareup.retrofit:converter-gson:2.0.0-beta2') {
+        transitive = false
+    }
+    compile('com.squareup.retrofit:adapter-rxjava:2.0.0-beta2') {
+        transitive = false
+    }
+    compile('com.squareup.okhttp:logging-interceptor:2.7.0') {
+        transitive = false
+    }
+    compile 'com.squareup.okhttp:okhttp:2.7.0'
+    compile('io.reactivex:rxandroid:1.1.0') {
+        transitive = false
+    }
+    compile 'io.reactivex:rxjava:1.1.0'
+    compile 'com.michaelpardo:activeandroid:3.1.0-SNAPSHOT'
+//    compile('com.bettervectordrawable:lib:0.7') {
+//        transitive = false
+//    }
+    compile 'com.loopj.android:android-async-http:1.4.9'
 }
